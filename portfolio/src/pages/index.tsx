@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Projetos } from '../components/Projetos'
-import styles from './home.module.scss'
+import styles from './Home.module.scss'
 
 export default function Home() {
   return (
     <>
       <Head>
-          <title>Home | ig.news</title>
+          <title>Portfólio | BMD</title>
       </Head>
 
       <section className={styles.contentContainer}>
@@ -19,7 +19,7 @@ export default function Home() {
               </p>
           </div>
           <div className={styles.imgWrapper}>
-              <img src="/images/eusp.png" alt="Eu"/>
+              <img src="/images/home.jpg" alt="Eu"/>
           </div>
       </section>
 
@@ -33,7 +33,7 @@ export default function Home() {
                     Meu nome é Bernardo Maia Detomi, nasci em 2002
                     <div className={styles.arrowSobreMim}></div>  
                   </blockquote>  
-                  <img src="/images/eupadrao.jpg" alt="Eu" />  
+                  <img src="/images/home.jpg" alt="Eu" />  
                   <div className={styles.descricaoSobreMim}>  
                     <h5>Eu</h5>  
                   </div>  
