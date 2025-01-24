@@ -44,7 +44,7 @@ export default function Home() {
                     Estou cursando Ciência da Computação na UFSJ.
                     <div className={styles.arrowSobreMim}></div>  
                   </blockquote>  
-                  <img src="/images/eumamae.jpg" alt="eu e minha mãe" />  
+                  <img src="/images/home.jpg" alt="eu e minha familia" />  
                   <div className={styles.descricaoSobreMim}>  
                     <h5>Eu & minha mãe</h5>  
                   </div>  
@@ -55,7 +55,7 @@ export default function Home() {
                       
                       <div className={styles.arrowSobreMim}></div>  
                     </blockquote>  
-                    <img src="/images/eujeanfernando.jpg" alt="Eu e amigos" />  
+                    <img src="/images/home.jpg" alt="Eu e amigos" />  
                     <div id='oi' className={styles.descricaoSobreMim}>  
                       <h5>eu & Amigos</h5>  
                     </div>  
