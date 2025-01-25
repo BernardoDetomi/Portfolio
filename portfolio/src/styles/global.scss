@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+} 
+
 :root{
   --white: #FFF;
   --gray-100: #e1e1e6;

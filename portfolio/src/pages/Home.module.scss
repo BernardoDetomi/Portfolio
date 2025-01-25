@@ -1,12 +1,12 @@
 .contentContainer {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 20rem 2rem 0 2rem;
+  padding: 10rem 2rem 0 2rem;
   height: calc(95vh - 5rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .hero {
@@ -47,18 +47,18 @@
 }
 
 .imgWrapper {
+    position: relative;
+    z-index: 1;
+  
+  img {
+      border-radius: 800px;
+      padding: 200px;
+      width: 1000px;
+  }
+
   @media (max-width: 875px){
       width: 50px;
       padding-right: 500px;
-  }
-  position: relative;
-  z-index: 1;
-  margin-top: 5rem;
-  
-  img {
-      border-radius: 200rem;
-      padding: 200px;
-      width: 1600px;
   }
 }
 
@@ -207,5 +207,79 @@
           text-transform: none;  
           padding-left: 5px;  
       }
+  }
+}
+
+.containerContato {
+  position: relative;
+  z-index: 2;
+  background-color: #212121;
+  padding: 4rem 0;
+  margin-top: 5rem;
+
+  > h1 {
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      @media (max-width: 800px) {
+        display: none;
+      }
+      content: '';
+      height: 1px;
+      border: 3px 3px 0 0;
+      width: 80%;
+      position: absolute;
+      bottom: 1px;
+      left: 8rem;
+      background: var(--yellow-500);
+    }
+  }
+}
+
+.heroContato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 0 2rem;
+}
+
+.cardContato {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: var(--yellow-500);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #ffffff;
+    opacity: 0.8;
+    text-align: center;
   }
 }

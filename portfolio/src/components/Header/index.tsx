@@ -21,7 +21,7 @@ export function Header(){
 
                  <nav className={isMenuOpen ? styles.active : ''}>
                      <a href="#home">Home</a>
-                     <a href="#sobremim">Sobre Mim</a>
+                     <a href="#sobre">Sobre Mim</a>
                      <a href="#projetos">Projetos</a>
                      <a href="#contato">Contato</a>
                  </nav>

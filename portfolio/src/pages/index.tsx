@@ -9,13 +9,12 @@ export default function Home() {
           <title>Portfólio | BMD</title>
       </Head>
 
-      <section className={styles.contentContainer}>
+      <section id="home" className={styles.contentContainer}>
           <div className={styles.hero}>
               <span>🤙 Olá,</span>
               <h1>Bem-vindo ao meu <span>Portfólio.</span></h1>
               <p>
-                Descubra um pouco sobre mim e <br />
-                sobre meu <span>mundo.</span>
+                Descubra um pouco sobre mim e sobre meu <span>mundo.</span>
               </p>
           </div>
           <div className={styles.imgWrapper}>
@@ -23,8 +22,7 @@ export default function Home() {
           </div>
       </section>
 
-      <section className={styles.containerSobreMim}>
-
+      <section id="sobre" className={styles.containerSobreMim}>
           <h1>Sobre mim</h1>
         
           <div className={styles.heroSobreMim}>
@@ -63,11 +61,39 @@ export default function Home() {
           </div>
       </section>
 
-      <Projetos/>
+      <section id="projetos">
+          <Projetos/>
+      </section>
 
-      
+      <section id="contato" className={styles.containerContato}>
+          <h1>Contato</h1>
+          
+          <div className={styles.heroContato}>
+              <div className={styles.cardContato}>
+                  <a href="mailto:bernardomd01@gmail.com">
+                      <img src="/images/email.png" alt="Email" />
+                      <h3>Email</h3>
+                      <p>bernardomd01@gmail.com</p>
+                  </a>
+              </div>
+
+              <div className={styles.cardContato}>
+                  <a href="https://www.linkedin.com/in/bernardo-maia-detomi-7621a51b9/" target="_blank" rel="noopener noreferrer">
+                      <img src="/images/linkedin.png" alt="LinkedIn" />
+                      <h3>LinkedIn</h3>
+                      <p>Bernardo Maia Detomi</p>
+                  </a>
+              </div>
+
+              <div className={styles.cardContato}>
+                  <a href="https://github.com/BernardoDetomi" target="_blank" rel="noopener noreferrer">
+                      <img src="/images/github.png" alt="GitHub" />
+                      <h3>GitHub</h3>
+                      <p>github.com/BernardoDetomi</p>
+                  </a>
+              </div>
+          </div>
+      </section>
     </>
-
-
   )
 }
