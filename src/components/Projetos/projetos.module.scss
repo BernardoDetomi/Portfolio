@@ -49,12 +49,12 @@
             }
   
             .azul {
-              color: #00fffc;
+              color: #fffc00;
 
             }
   
             .roxo {
-              color: #fc00ff;
+              color: #fffc00;
 
             }
           }
@@ -164,25 +164,23 @@
     transition: color 0.2s;
 
     &:hover {
-        color: green;
+        color: #eba417;
     }
 }
 
 .button {
-  background: #2a2a2a;
-  border-radius: 8px;
-  padding: 2rem;
-  width: 160px;
+  padding-top: 2rem;
   text-align: center;
   transition: transform 0.3s ease;
 
   &:hover {
     transform: translateY(-10px);
+    color: #000000;
   }
 
   a {
     text-decoration: none;
-    color: inherit;
+
   }
 
   h3 {

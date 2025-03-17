@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Projetos } from '../components/Projetos'
+import { Certificados } from '../components/Certificados'
 import styles from './Home.module.scss'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -44,18 +46,18 @@ export default function Home() {
                   </blockquote>  
                   <img src="/images/home.jpg" alt="eu e minha familia" />  
                   <div className={styles.descricaoSobreMim}>  
-                    <h5>Eu & minha mãe</h5>  
+                    <h5>Eu</h5>  
                   </div>  
               </figure>  
 
               <figure className={styles.cardSobreMim}>  
                     <blockquote>
-                      
+                      Atualmente sou estagiário no SETIR da UFSJ e também faço parte da LinkedEJ do curso de Ciência da Computação da UFSJ.
                       <div className={styles.arrowSobreMim}></div>  
                     </blockquote>  
                     <img src="/images/home.jpg" alt="Eu e amigos" />  
                     <div id='oi' className={styles.descricaoSobreMim}>  
-                      <h5>eu & Amigos</h5>  
+                      <h5>Eu</h5>  
                     </div>  
               </figure>  
           </div>
@@ -63,6 +65,10 @@ export default function Home() {
 
       <section id="projetos">
           <Projetos/>
+      </section>
+
+      <section id="certificados">
+          <Certificados/>
       </section>
 
       <section id="contato" className={styles.containerContato}>
@@ -93,6 +99,7 @@ export default function Home() {
                   </a>
               </div>
           </div>
+          <Footer></Footer>
       </section>
     </>
   )

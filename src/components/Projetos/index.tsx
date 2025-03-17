@@ -1,6 +1,6 @@
 import styles from './projetos.module.scss'
-import { FaLaravel, FaVuejs } from 'react-icons/fa'
-import { SiFlutter } from 'react-icons/si'
+import { FaLaravel, FaVuejs, FaReact, FaGithub } from 'react-icons/fa'
+import { SiFlutter, SiNextdotjs, SiFirebase } from 'react-icons/si'
 import { IoPieChartSharp } from 'react-icons/io5'
 
 
@@ -19,9 +19,10 @@ export function Projetos (){
                         <div className={styles.face1}>
                             <div className={styles.content}>
                             <span className={styles.stars}></span>
-                            <h2 className={styles.yellow}>Clinic Scheduling</h2><br />
-                            <p className={styles.amarelo}>Web system that automates patient appointments.</p>
-                            <a target="_blank" href="https://laravel.com"><FaLaravel className={styles.icons}/></a>
+                            <h2 className={styles.yellow}>DentalLinked</h2><br />
+                            <p className={styles.amarelo}>Site Web desenvolvido para uma clinica odontologica para o LinkedEJ.</p>
+                            <a target="_blank" href="https://react.dev/"><FaReact className={styles.icons}/></a>
+                            <a target="_blank" href="https://github.com/BernardoDetomi/DentalLinked"><FaGithub className={styles.icons}/></a>
                             </div>
                         </div>
                         <div className={styles.face2}>
@@ -33,10 +34,10 @@ export function Projetos (){
                         <div className={styles.face1}>
                             <div className={styles.content}>
                             <span className={styles.stars}></span>
-                            <h2 className={styles.azul}>Fugulin</h2><br />
-                            <p className={styles.azul}>Sistema web baseado na "Escala de Fugulin". Analisa o estado do paciente e gera um relatório de acordo com as respostas.</p>
-                            <a target="_blank" href="https://vuejs.org"><FaVuejs className={styles.icons}/></a>
-                            <a target="_blank" href="https://laravel.com"><FaLaravel className={styles.icons}/></a>
+                            <h2 className={styles.azul}>Portfólio</h2><br />
+                            <p className={styles.azul}>Portfólio feito para mim apenas para praticar e entender mais das tecnologias usadas.</p>
+                            <a target="_blank" href="https://react.dev/"><FaReact className={styles.icons}/></a>
+                            <a target="_blank" href="https://nextjs.org"><SiNextdotjs className={styles.icons}/></a>
                             </div>
                         </div>
                         <div className={styles.face2}>
@@ -48,11 +49,13 @@ export function Projetos (){
                         <div className={styles.face1}>
                             <div className={styles.content}>
                             <span className={styles.stars}></span>
-                            <h2 className={styles.amarelo}>Sorriso top</h2><br />
-                            <p className={styles.amarelo}>Sistema para investigar a saúde bocal de alunos do ensino médio. Consiste em um aplicativo mobile que guarda as informações e envia a um serviço para ser gerado gráficos.</p>
-                            <a target="_blank" href="https://flutter.dev"><SiFlutter className={styles.icons}/></a>
-                            <a target="_blank" href="https://laravel.com"><FaLaravel className={styles.icons}/></a>
+                            <h2 className={styles.amarelo}>BarberizeApp (Em desenvolvimento)</h2><br />
+                            <p className={styles.amarelo}>O BarberizeApp será uma Aplicação Web que reunirá barbearia de minha cidade, com o intuito de facilitar o agendamento de cortes de barba e cabelo.</p>
+                            <a target="_blank" href="https://react.dev/"><FaReact className={styles.icons}/></a>
+                            <a target="_blank" href="https://nextjs.org"><SiNextdotjs className={styles.icons}/></a>
+                            <a target="_blank" href="https://firebase.google.com"><SiFirebase className={styles.icons}/></a>
                             <a target="_blank" href="https://powerbi.microsoft.com/pt-br/"><IoPieChartSharp className={styles.icons}/></a>
+                            <a target="_blank" href="https://github.com/BernardoDetomi/BarberizeApp"><FaGithub className={styles.icons}/></a>
                             </div>
                         </div>
                         <div className={styles.face2}>
@@ -63,10 +66,9 @@ export function Projetos (){
                     </div>
                     <div className={styles.button}>
                         <a href="https://github.com/BernardoDetomi?tab=repositories" target="_blank" rel="noopener noreferrer">
-                            <h3>Saiba Mais</h3>
+                            <h3>Saiba Mais...</h3>
                         </a>
                     </div>
-
             </section>
         </>
     );

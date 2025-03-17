@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './styles.module.scss'
+import styles from './header.module.scss'
 
 export function Header(){
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,6 +23,7 @@ export function Header(){
                      <a href="#home">Home</a>
                      <a href="#sobre">Sobre Mim</a>
                      <a href="#projetos">Projetos</a>
+                     <a href="#certificados">Certificados</a>
                      <a href="#contato">Contato</a>
                  </nav>
 
