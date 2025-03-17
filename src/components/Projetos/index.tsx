@@ -61,6 +61,12 @@ export function Projetos (){
                     </div>
 
                     </div>
+                    <div className={styles.button}>
+                        <a href="https://github.com/BernardoDetomi?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <h3>Saiba Mais</h3>
+                        </a>
+                    </div>
+
             </section>
         </>
     );

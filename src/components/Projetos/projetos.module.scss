@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -94,9 +95,9 @@
       .card:nth-child(1) .face2 {
         background-image: linear-gradient(
           40deg,
-          #fffc00 0%,
-          #fc00ff 45%,
-          #00fffc 100%
+          #eba417 0%,
+          #eba417 45%,
+          #eba417 100%
         );
         border-radius: 15px;
       }
@@ -104,9 +105,9 @@
       .card:nth-child(2) .face2 {
         background-image: linear-gradient(
           40deg,
-          #fc00ff 0%,
-          #00fffc 45%,
-          #fffc00 100%
+          #eba417 0%,
+          #eba417 45%,
+          #eba417 100%
         );
         border-radius: 15px;
       }
@@ -114,9 +115,9 @@
       .card:nth-child(3) .face2 {
         background-image: linear-gradient(
           40deg,
-          #00fffc 0%,
-          #fc00ff 45%,
-          #fffc00 100%
+          #eba417 0%,
+          #eba417 45%,
+          #eba417 100%
         );
         border-radius: 15px;
       }
@@ -165,4 +166,27 @@
     &:hover {
         color: green;
     }
+}
+
+.button {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 160px;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h3 {
+    color: var(--yellow-500);
+    margin-bottom: 0.5rem;
+  }
 }
