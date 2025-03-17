@@ -9,6 +9,45 @@
         background-color: #000000;
         color: white;
         padding: 40px 20px;
+
+        @media (max-width: 768px) {
+            padding: 2rem 1rem;
+            
+            .content {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .contactContainer {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact {
+                text-align: center;
+                
+                p {
+                    justify-content: center;
+                }
+            }
+            
+            .socialLinks {
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .content {
+                h2 {
+                    font-size: 1.5rem;
+                }
+                
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
     }
 
     .content {

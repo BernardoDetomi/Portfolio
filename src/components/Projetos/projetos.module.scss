@@ -188,3 +188,18 @@
     margin-bottom: 0.5rem;
   }
 }
+
+.projetosContainer {
+    @media (max-width: 768px) {
+        padding: 2rem 1rem;
+        
+        .projetosGrid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        
+        .projetoCard {
+            width: 100%;
+        }
+    }
+}

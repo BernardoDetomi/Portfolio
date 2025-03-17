@@ -157,30 +157,37 @@
 
 @media (max-width: 768px) {
     .certificadosSection {
-        padding: 3rem 1rem;
-
+        padding: 2rem 1rem;
+        
         .titulo {
-            font-size: 2rem;
+            font-size: 1.75rem;
         }
-
+        
         .subtitulo {
             font-size: 1rem;
         }
-    }
-
-    .carrosselContainer {
-        padding: 0 1rem;
-    }
-
-    .certificadoCard {
-        a {
-            .certificadoInfo {
-                padding: 1rem;
-
-                h3 {
-                    font-size: 1.1rem;
+        
+        .carrosselContainer {
+            padding: 0;
+        }
+        
+        .certificadoCard {
+            a {
+                .certificadoInfo {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                    
+                    p {
+                        font-size: 0.9rem;
+                    }
                 }
             }
+        }
+        
+        .navButton {
+            width: 30px;
+            height: 30px;
         }
     }
 } 

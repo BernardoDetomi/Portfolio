@@ -7,6 +7,36 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    
+    .hero {
+      text-align: center;
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+    
+    .imgWrapper {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero {
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  }
 }
 
 .hero {
@@ -280,5 +310,35 @@
     color: #ffffff;
     opacity: 0.8;
     text-align: center;
+  }
+}
+
+.containerSobreMim {
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+    
+    .heroSobreMim {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .cardSobreMim {
+      width: 100%;
+    }
+  }
+}
+
+.containerContato {
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+    
+    .heroContato {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .cardContato {
+      width: 100%;
+    }
   }
 }
