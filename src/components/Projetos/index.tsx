@@ -23,6 +23,7 @@ export function Projetos (){
                             <p className={styles.amarelo}>Site Web desenvolvido para uma clinica odontologica para o LinkedEJ.</p>
                             <a target="_blank" href="https://react.dev/"><FaReact className={styles.icons}/></a>
                             <a target="_blank" href="https://github.com/BernardoDetomi/DentalLinked"><FaGithub className={styles.icons}/></a>
+                            <a target="_blank" href="https://dental-linked.vercel.app/"><FaGithub className={styles.icons}/></a>
                             </div>
                         </div>
                         <div className={styles.face2}>
