@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   tags: string[];
   image: string;
+  screenshot?: string;
   link: string;
   repo: string;
 }
@@ -22,29 +23,32 @@ export interface Certification {
 export const PROJECT_DATA: Project[] = [
   {
     id: 1,
-    title: "E-commerce Dashboard",
-    description: "Painel administrativo completo com gráficos em tempo real, gestão de estoque e análise de vendas. Focado em performance e UX.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
-    image: "linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)",
-    link: "#",
+    title: "Eletrov - Energia Solar",
+    description: "Site institucional desenvolvido para a Eletrov, empresa especializada na venda e instalação de painéis solares. Design moderno focado em conversão e apresentação dos serviços.",
+    tags: ["Next.js 15", "TypeScript", "React 19", "Tailwind CSS 4", "Framer Motion"],
+    image: "linear-gradient(135deg, #0a4d1a 0%, #1a7a2e 100%)",
+    screenshot: "/images/projects/eletrov.png",
+    link: "https://eletrov.com",
     repo: "#"
   },
   {
     id: 2,
-    title: "SaaS Financeiro",
-    description: "Aplicação para gestão financeira pessoal com integração bancária (Open Finance) e categorização automática via IA.",
-    tags: ["React", "Node.js", "PostgreSQL", "OpenAI API"],
-    image: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
-    link: "#",
+    title: "Sítio Cangumbim",
+    description: "Site para divulgação e aluguel do Sítio Cangumbim. Apresenta fotos, informações sobre o espaço, localização e facilita o contato para reservas.",
+    tags: ["Next.js 14", "TypeScript", "React 18", "Tailwind CSS", "Lucide Icons"],
+    image: "linear-gradient(135deg, #2a1b0a 0%, #4a6b0f 100%)",
+    screenshot: "/images/projects/sitiocangumbim.png",
+    link: "https://sitiocangumbim.com.br",
     repo: "#"
   },
   {
     id: 3,
-    title: "Social Network App",
-    description: "Rede social focada em desenvolvedores. Features incluem feed em tempo real, chat via WebSockets e editor de código compartilhado.",
-    tags: ["Vue.js", "Firebase", "Tailwind", "WebSockets"],
-    image: "linear-gradient(135deg, #2a1b0a 0%, #4a2b0f 100%)",
-    link: "#",
+    title: "BarberizeApp",
+    description: "Plataforma que reúne diversas barbearias em um só lugar, permitindo que clientes encontrem e agendem horários de forma prática e rápida. Em desenvolvimento.",
+    tags: ["React", "JavaScript", "Tailwind CSS", "Firebase"],
+    image: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+    screenshot: "/images/projects/barberize.png",
+    link: "https://barberize.uk",
     repo: "#"
   }
 ];

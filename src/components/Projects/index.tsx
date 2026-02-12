@@ -18,6 +18,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
         className="h-48 w-full relative overflow-hidden"
         style={{ background: project.image }}
       >
+        {project.screenshot && (
+          <img
+            src={project.screenshot}
+            alt={`Preview de ${project.title}`}
+            className="absolute inset-0 w-full h-full object-cover object-top"
+          />
+        )}
         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all" />
         {/* Overlay on hover */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-neutral-950/60 backdrop-blur-sm gap-4">
